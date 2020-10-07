@@ -371,40 +371,221 @@ wmjQuery('td:deepui_hidden')
               </div>
           </li>
           <li>
-            <a class="section-link" data-scroll="" href="#beforeMount">
-              beforeMount
+            <a
+              class="section-link"
+              data-target="simpleModal_textStartsWith"
+              data-toggle="modal"
+            >
+            :textStartsWith()
             </a>
           </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#mounted"> mounted </a>
+          <div id="simpleModal_textStartsWith" class="modal">
+            <div class="modal-window">
+              <h2>:textStartsWith()</h2>
+              <p>
+                Checks that text of element starts with input. Note that text is defined as wmjQuery(elem).text()
+              </p>
+              <div class="Container">
+                <nav>
+                  <div class="current"></div>
+                  <a href="#one" class="active">jQuery</a>
+                </nav>
+                <div class="Contents">
+                  <div class="Content" id="one">
+                    <pre><code> 
+wmjQuery('td:textStartsWith(Account)')
+              </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           </li>
           <li>
-            <a class="section-link" data-scroll="" href="#beforeUpdate">
-              beforeUpdate
+            <a
+              class="section-link"
+              data-target="simpleModal_textEndsWith"
+              data-toggle="modal"
+            >
+            :textEndsWith()
             </a>
           </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#updated"> updated </a>
+          <div id="simpleModal_textEndsWith" class="modal">
+            <div class="modal-window">
+              <h2>:textEndsWith()</h2>
+              <p>
+                Checks that text of element ends with input.
+              </p>
+              <div class="Container">
+                <nav>
+                  <div class="current"></div>
+                  <a href="#one" class="active">jQuery</a>
+                </nav>
+                <div class="Contents">
+                  <div class="Content" id="one">
+                    <pre><code> 
+wmjQuery('td:textEndsWith(ing)')
+              </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           </li>
           <li>
-            <a class="section-link" data-scroll="" href="#activated">
-              activated
-            </a>
+            <a
+            class="section-link"
+            data-target="simpleModal_hasParent"
+            data-toggle="modal"
+          >
+          :hasParent()
+          </a>
+        </li>
+        <div id="simpleModal_hasParent" class="modal">
+          <div class="modal-window">
+            <h2>:hasParent()</h2>
+            <p>
+            Verify that input element is an ancestor (parent, grandparent etc) of element
+            </p>
+            <div class="Container">
+              <nav>
+                <div class="current"></div>
+                <a href="#one" class="active">jQuery</a>
+              </nav>
+              <div class="Contents">
+                <div class="Content" id="one">
+                  <pre><code> 
+ wmjQuery(':hasParent(.labelCol)')
+            </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
           </li>
           <li>
-            <a class="section-link" data-scroll="" href="#deactivated">
-              deactivated
-            </a>
+            <a
+            class="section-link"
+            data-target="simpleModal_directContains"
+            data-toggle="modal"
+          >
+          :directContains()
+          </a>
+        </li>
+        <div id="simpleModal_directContains" class="modal">
+          <div class="modal-window">
+            <h2>:directContains()</h2>
+            <p>
+            Similar to :contains() but checks only direct children and not all descendants	
+            </p>
+            <div class="Container">
+              <nav>
+                <div class="current"></div>
+                <a href="#one" class="active">jQuery</a>
+              </nav>
+              <div class="Contents">
+                <div class="Content" id="one">
+                  <pre><code> 
+wmjQuery('.labelcol:directContains(Account)')
+            </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
           </li>
           <li>
-            <a class="section-link" data-scroll="" href="#beforeDestroy">
-              beforeDestroy
-            </a>
+            <a
+            class="section-link"
+            data-target="simpleModal_visualDown"
+            data-toggle="modal"
+          >
+          .visualDown()
+          </a>
+        </li>
+        <div id="simpleModal_visualDown" class="modal">
+          <div class="modal-window">
+            <h2>.visualDown()</h2>
+            <p>
+            Get element that is visually below on screen	
+            </p>
+            <div class="Container">
+              <nav>
+                <div class="current"></div>
+                <a href="#one" class="active">jQuery</a>
+              </nav>
+              <div class="Contents">
+                <div class="Content" id="one">
+                  <pre><code> 
+wmjQuery('.labelCol:first').visualDown()
+            </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
           </li>
           <li>
-            <a class="section-link" data-scroll="" href="#destroyed">
-              destroyed
-            </a>
+            <a
+            class="section-link"
+            data-target="simpleModal_visualRight"
+            data-toggle="modal"
+          >
+          .visualRight()
+          </a>
+        </li>
+        <div id="simpleModal_visualRight" class="modal">
+          <div class="modal-window">
+            <h2>.visualRight()</h2>
+            <p>
+            Get element that is visually right on screen	
+            </p>
+            <div class="Container">
+              <nav>
+                <div class="current"></div>
+                <a href="#one" class="active">jQuery</a>
+              </nav>
+              <div class="Contents">
+                <div class="Content" id="one">
+                  <pre><code> 
+wmjQuery('.labelCol:first').visualRight()
+            </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </li>
+          <li>
+            <a
+            class="section-link"
+            data-target="simpleModal_identity"
+            data-toggle="modal"
+          >
+          .identity()
+          </a>
+        </li>
+        <div id="simpleModal_identity" class="modal">
+          <div class="modal-window">
+            <h2>.identity()</h2>
+            <p>
+            Return input. <strong>Will be translated by lexicon!</strong>		
+            </p>
+            <div class="Container">
+              <nav>
+                <div class="current"></div>
+                <a href="#one" class="active">jQuery</a>
+              </nav>
+              <div class="Contents">
+                <div class="Content" id="one">
+                  <pre><code> 
+wmjQuery(IGNORED).identity(fixed.text)
+            </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
           </li>
         </ul>
       </li>
