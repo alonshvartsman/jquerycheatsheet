@@ -79,6 +79,7 @@ ul {
 
 .menu-root ul li a {
   cursor: pointer;
+  font-size: 15px;
 }
 
 .menu-root var {
