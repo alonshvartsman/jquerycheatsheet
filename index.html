@@ -1,1133 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="draggable.js"></script>
-    <script src="modal.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>jQuery Cheat Sheet</title>
-    <link rel="icon" type="image/png" href="images/images/jqueryicon.png" />
-  </head>
 
-  <body>
-    <header class="header">
-      <h2 class="logo">
-        <a href="#"
-          ><img src="images/jquerycheatsheet.svg" width="190px" alt="Jquerycheatsheet.com Logo"
-        /></a>
-      </h2>
-      <ul class="main-nav"></ul>
-    </header>
-    <ul class="menu-root">
+<head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script src="draggable.js"></script>
+  <script src="modal.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>jQuery Cheat Sheet</title>
+  <link rel="icon" type="image/png" href="images/images/jqueryicon.png" />
+</head>
 
-      <li class="color-light-purple" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+<body>
+  <header class="header">
+    <h2 class="logo">
+      <a href="#"><img src="images/jquerycheatsheet.svg" width="190px" alt="Jquerycheatsheet.com Logo" /></a>
+    </h2>
+    <ul class="main-nav"></ul>
+  </header>
+  <ul class="menu-root">
 
-        <a class="section-link active" data-scroll="">
-          <small>Selectors</small>
-          Basic Filters
-        </a>
-        
-        <ul class="menu-sub">
+    <li class="color-light-purple" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
 
-          <li>
-            <a
-              class="section-link"
-              data-target="simpleModal_eq"
-              data-toggle="modal"
-            >
-              :eq()
-              <var> 2.2 </var>
-            </a>
-          </li>
-          <div id="simpleModal_eq" class="modal">
-            <div class="modal-window">
-              <div class="modal-heading">
-              <a class="api-button" href="https://api.jquery.com/eq-selector/" target="_blank"><img src="images/jquery.svg" alt="jQuery API"></a>
+      <a class="section-link active" data-scroll="">
+        <small>Selectors</small>
+        Basics
+      </a>
+
+      <ul class="menu-sub">
+
+        <li>
+          <a class="section-link" data-target="simpleModal_eq" data-toggle="modal">
+            :eq()
+            <var> 2.2 </var>
+          </a>
+        </li>
+        <div id="simpleModal_eq" class="modal">
+          <div class="modal-window">
+            <div class="modal-heading">
+              <a class="api-button" href="https://api.jquery.com/eq-selector/" target="_blank"><img
+                  src="images/jquery.svg" alt="jQuery API"></a>
               <h2>:eq() Selector</h2>
-              </div>
-              <p>
-                The :eq() selector selects an element with a specific index
-                number
-              </p>
-              <div class="Container">
-                <nav>
-                  <div class="current"></div>
-                  <a href="#one">jQuery</a>
-                </nav>
-                <div class="Contents">
-                  <div class="Content" id="one">
-                    <pre><code> 
+            </div>
+            <p>
+              The :eq() selector selects an element with a specific index
+              number
+            </p>
+            <div class="Container">
+              <nav>
+                <div class="current"></div>
+                <a href="#one">jQuery</a>
+              </nav>
+              <div class="Contents">
+                <div class="Content" id="one">
+                  <pre><code> 
 <span class="code-example">Select the second < p > element:</span>
 
 $("p:eq(1)")
               </code></pre>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_first"
-                  data-toggle="modal"
-                >
-                :first
-                </a>
-              </li>
-              <div id="simpleModal_first" class="modal">
-                <div class="modal-window">
-                  <h2>:first Selector</h2>
-                  <p>
-                    The :first selector selects the first element.
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
+        </div>
+
+        <li>
+        <li>
+          <a class="section-link" data-target="simpleModal_first" data-toggle="modal">
+            :first
+          </a>
+        </li>
+        <div id="simpleModal_first" class="modal">
+          <div class="modal-window">
+            <h2>:first Selector</h2>
+            <p>
+              The :first selector selects the first element.
+            </p>
+            <div class="Container">
+              <nav>
+                <div class="current"></div>
+                <a href="#one">jQuery</a>
+              </nav>
+              <div class="Contents">
+                <div class="Content" id="one">
+                  <pre><code> 
 Select the first < p > element:
 
 wmJquery("p:first")
                   </code></pre>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_last"
-                  data-toggle="modal"
-                >
-                :last
-                </a>
-              </li>
-              <div id="simpleModal_last" class="modal">
-                <div class="modal-window">
-                  <h2>:last Selector</h2>
-                  <p>
-                    The :last selector selects the last element.
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
+            </div>
+          </div>
+        </div>
+        <li>
+        <li>
+          <a class="section-link" data-target="simpleModal_last" data-toggle="modal">
+            :last
+          </a>
+        </li>
+        <div id="simpleModal_last" class="modal">
+          <div class="modal-window">
+            <h2>:last Selector</h2>
+            <p>
+              The :last selector selects the last element.
+            </p>
+            <div class="Container">
+              <nav>
+                <div class="current"></div>
+                <a href="#one">jQuery</a>
+              </nav>
+              <div class="Contents">
+                <div class="Content" id="one">
+                  <pre><code> 
 Select the last < p > element:
 
 wmjQuery("p:last")
                   </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-        </ul>
-      </li>
-      <li class="color-light-purple" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="">
-          <small>Selectors</small>
-          Content Filters
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_contains"
-                  data-toggle="modal"
-                >
-                  :contains()
-                </a>
-              </li>
-              <div id="simpleModal_contains" class="modal">
-                <div class="modal-window">
-                  <h2>:contains() Selector</h2>
-                  <p>
-                    The :contains() selector selects elements containing the specified string.
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
-Select all < h1 > elements containing "WalkMe":
-
-wmjQuery('h1:contains(WalkMe)')
-                  </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_empty"
-                  data-toggle="modal"
-                >
-                  :empty
-                </a>
-              </li>
-              <div id="simpleModal_empty" class="modal">
-                <div class="modal-window">
-                  <h2>:empty Selector</h2>
-                  <p>
-                    The :empty selector selects empty elements. An empty element is an element without child elements or text.
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
-wmjQuery(':empty')
-                  </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_has"
-                  data-toggle="modal"
-                >
-                  :has()
-                </a>
-              </li>
-              <div id="simpleModal_has" class="modal">
-                <div class="modal-window">
-                  <h2>:has() Selector</h2>
-                  <p>
-                    The :has() selector selects all elements that have one or more elements inside of them, that matches the specified selector.
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
-wmjQuery("p:has(span)")
-                  </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_parent"
-                  data-toggle="modal"
-                >
-                  :parent
-                </a>
-              </li>
-              <div id="simpleModal_parent" class="modal">
-                <div class="modal-window">
-                  <h2>:parent Selector</h2>
-                  <p>
-                    The :parent selector selects all elements that are the parent of another element, including text nodes.
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
-Select all < td > elements with children, including text:
-
-wmjQuery("td:parent")
-                  </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-        </ul>
-      </li>
-      <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="">
-          <small> Extensions </small>
-          DeepUI
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a
-              class="section-link"
-              data-target="simpleModal_deepuivisible"
-              data-toggle="modal"
-            >
-              :deepui_visible
-            </a>
-          </li>
-          <div id="simpleModal_deepuivisible" class="modal">
-            <div class="modal-window">
-              <h2>:deepui_visible</h2>
-              <p>
-                Checks that the element has height and width and is on the
-                top/obscured (not covered in z-index). Use in cases where <strong>mt_visible</strong> is not strong enough.
-              </p>
-              <div class="Container">
-                <nav>
-                  <div class="current"></div>
-                  <a href="#one">jQuery</a>
-                </nav>
-                <div class="Contents">
-                  <div class="Content" id="one">
-                    <pre><code> 
-wmjQuery('td:deepui_visible')
-              </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_deepuihidden"
-                  data-toggle="modal"
-                >
-                :deepui_hidden
-                </a>
-              </li>
-              <div id="simpleModal_deepuihidden" class="modal">
-                <div class="modal-window">
-                  <h2>:deepui_hidden</h2>
-                  <p>
-                    Used in the opposite way of <strong>deepui_visible</strong>
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
-wmjQuery('td:deepui_hidden')
-                  </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <li>
-            <a
-              class="section-link"
-              data-target="simpleModal_textStartsWith"
-              data-toggle="modal"
-            >
-            :textStartsWith()
-            </a>
-          </li>
-          <div id="simpleModal_textStartsWith" class="modal">
-            <div class="modal-window">
-              <h2>:textStartsWith()</h2>
-              <p>
-                Checks that text of element starts with input. Note that text is defined as wmjQuery(elem).text()
-              </p>
-              <div class="Container">
-                <nav>
-                  <div class="current"></div>
-                  <a href="#one">jQuery</a>
-                </nav>
-                <div class="Contents">
-                  <div class="Content" id="one">
-                    <pre><code> 
-wmjQuery('td:textStartsWith(Account)')
-              </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </li>
-          <li>
-            <a
-              class="section-link"
-              data-target="simpleModal_textEndsWith"
-              data-toggle="modal"
-            >
-            :textEndsWith()
-            </a>
-          </li>
-          <div id="simpleModal_textEndsWith" class="modal">
-            <div class="modal-window">
-              <h2>:textEndsWith()</h2>
-              <p>
-                Checks that text of element ends with input.
-              </p>
-              <div class="Container">
-                <nav>
-                  <div class="current"></div>
-                  <a href="#one">jQuery</a>
-                </nav>
-                <div class="Contents">
-                  <div class="Content" id="one">
-                    <pre><code> 
-wmjQuery('td:textEndsWith(ing)')
-              </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_hasParent"
-            data-toggle="modal"
-          >
-          :hasParent()
-          </a>
-        </li>
-        <div id="simpleModal_hasParent" class="modal">
-          <div class="modal-window">
-            <h2>:hasParent()</h2>
-            <p>
-            Verify that input element is an ancestor (parent, grandparent etc) of element
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
- wmjQuery(':hasParent(.labelCol)')
-            </code></pre>
                 </div>
               </div>
             </div>
           </div>
         </div>
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_directContains"
-            data-toggle="modal"
-          >
-          :directContains()
-          </a>
-        </li>
-        <div id="simpleModal_directContains" class="modal">
-          <div class="modal-window">
-            <h2>:directContains()</h2>
-            <p>
-            Similar to :contains() but checks only direct children and not all descendants	
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-wmjQuery('.labelcol:directContains(Account)')
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_visualDown"
-            data-toggle="modal"
-          >
-          .visualDown()
-          </a>
-        </li>
-        <div id="simpleModal_visualDown" class="modal">
-          <div class="modal-window">
-            <h2>.visualDown()</h2>
-            <p>
-            Get element that is visually below on screen	
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-wmjQuery('.labelCol:first').visualDown()
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_visualRight"
-            data-toggle="modal"
-          >
-          .visualRight()
-          </a>
-        </li>
-        <div id="simpleModal_visualRight" class="modal">
-          <div class="modal-window">
-            <h2>.visualRight()</h2>
-            <p>
-            Get element that is visually right on screen	
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-wmjQuery('.labelCol:first').visualRight()
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_identity"
-            data-toggle="modal"
-          >
-          .identity()
-          </a>
-        </li>
-        <div id="simpleModal_identity" class="modal">
-          <div class="modal-window">
-            <h2>.identity()</h2>
-            <p>
-            Return input. <strong>Will be translated by lexicon!</strong>		
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-wmjQuery(IGNORED).identity(fixed.text)
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </li>
-        </ul>
-      </li>
-      <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="">
-          <small> Options </small>
-          Data
-        </a>
+    </li>
+  </ul>
+  </li>
+  <li class="color-light-purple" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="">
+      <small>Selectors</small>
+      Content Filters
+    </a>
 
-        <ul class="menu-sub">
+    <ul class="menu-sub">
 
-          <li>
-            <a class="section-link" data-scroll="" href="#data"> data </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#props"> props </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#propsData">
-              propsData
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#computed">
-              computed
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#methods"> methods </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#watch"> watch </a>
-          </li>
-        </ul>
-      </li>
-      <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Options-DOM">
-          <small> Options </small>
-          DOM
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a class="section-link" data-scroll="" href="#el"> el </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#template">
-              template
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#render"> render </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#renderError">
-              renderError
-              <var> 2.2 </var>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Options-Assets">
-          <small>Attributes</small>
-          Attributes
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_attribute1"
-                  data-toggle="modal"
-                >
-                [name|=”value”]
-                </a>
-              </li>
-              <div id="simpleModal_attribute1" class="modal">
-                <div class="modal-window">
-                  <h2>Attribute Contains Prefix Selector [name|=”value”]</h2>
-                  <p>
-                    Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
-Select all < p > elements with a title attribute that 
-starts with the value "Tomorrow":
-
-wmjQuery("p[title|='Tomorrow']")
-                  </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_attribute2"
-            data-toggle="modal"
-          >
-          [name*=”value”]
-          </a>
-        </li>
-        <div id="simpleModal_attribute2" class="modal">
-          <div class="modal-window">
-            <h2>Attribute Contains Selector [name*=”value”]</h2>
-            <p>
-                Selects elements that have the specified attribute with a value containing a given substring.
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Select all < input > elements with a name attribute 
-that contains the word "nation":
-
-wmjQuery("input[name*='nation']")
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_attribute3"
-            data-toggle="modal"
-          >
-          [name~=”value”]
-          </a>
-        </li>
-        <div id="simpleModal_attribute3" class="modal">
-          <div class="modal-window">
-            <h2>Attribute Contains Word Selector [name~=”value”]</h2>
-            <p>
-            Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Select all < input > elements with a name attribute 
-that contains the specific word "nation":
-
-wmjQuery("input[name~='nation']")
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_attribute4"
-            data-toggle="modal"
-          >
-          [name$=”value”]
-          </a>
-        </li>
-        <div id="simpleModal_attribute4" class="modal">
-          <div class="modal-window">
-            <h2>Attribute Ends With Selector [name$=”value”]</h2>
-            <p>
-                Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive. 
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Select all < a > elements with a href attribute that 
-ends with ".org":
-
-wmjQuery("a[href$='.org']")
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>   
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_attribute5"
-            data-toggle="modal"
-          >
-          [name=”value”]
-          </a>
-        </li>
-        <div id="simpleModal_attribute5" class="modal">
-          <div class="modal-window">
-            <h2>Attribute Equals Selector [name=”value”]</h2>
-            <p>
-            Selects elements that have the specified attribute with a value exactly equal to a certain value.
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Select every element containing an input attribute with 
-the value "price":
-
-wmjQuery("[id='price']")
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>      
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_attribute6"
-            data-toggle="modal"
-          >
-          [name!=”value”]
-          </a>
-        </li>
-        <div id="simpleModal_attribute6" class="modal">
-          <div class="modal-window">
-            <h2>Attribute Not Equal Selector [name!=”value”]</h2>
-            <p>
-                Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Select all < p > elements <strong>NOT</strong> containing a class 
-attribute with the value "intro":
-
-wmjQuery("p[class!='intro']")
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>      
-          </li>
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_attribute7"
-            data-toggle="modal"
-          >
-          [name^=”value”]
-          </a>
-        </li>
-        <div id="simpleModal_attribute7" class="modal">
-          <div class="modal-window">
-            <h2>Attribute Starts With Selector [name^=”value”]</h2>
-            <p>
-            Selects elements that have the specified attribute with a value beginning exactly with a given string.
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Select all < input > elements with a name attribute 
-that starts with "nation":
-
-wmjQuery("input[name^='nation']")
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>      
-          </li>
-        </ul>
-      </li>
-      <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Options-Composition">
-          <small> Options </small>
-          Composition
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a class="section-link" data-scroll="" href="#parent"> parent </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#mixins"> mixins </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#extends"> extends </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#provide-inject">
-              provide / inject
-              <var> 2.2 </var>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Options-Misc">
-          <small> Options </small>
-          Misc
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a class="section-link" data-scroll="" href="#name"> name </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#delimiters">
-              delimiters
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#functional">
-              functional
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#model">
-              model
-              <var> 2.2 </var>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="color-light-blue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Instance-Methods-Data">
-          <small> Methods </small>
-          Data
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-watch">
-              vm.$watch
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-set"> vm.$set </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-delete">
-              vm.$delete
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="color-light-blue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Instance-Methods-Events">
-          <small>Traversing</small>
-          Filtering
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a
-            class="section-link"
-            data-target="simpleModal_filter"
-            data-toggle="modal"
-          >
-          .filter()
-          </a>
-        </li>
-        <div id="simpleModal_filter" class="modal">
-          <div class="modal-window">
-            <h2>.filter() Method</h2>
-            <p>
-            The filter() method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned.
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Return all < p > elements with class name "intro":
-
-wmjQuery("p").filter(".intro")
-            </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </li>
-        </ul>
-      </li>
-      <li class="color-light-blue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a
-          class="section-link"
-          data-scroll=""
-          href="#Instance-Methods-Lifecycle"
-        >
-          <small> Traversing </small>
-          Traverse
-        </a>
-
-        <ul class="menu-sub">
-
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_find"
-                  data-toggle="modal"
-                >
-                .find()
-                </a>
-              </li>
-              <div id="simpleModal_find" class="modal">
-                <div class="modal-window">
-                  <h2>.find() Method</h2>
-                  <p>
-                    Finds all the descendant elements of the selected element. It will traverse all the way down to the last leaf of the selected element in the DOM tree.
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
-Select all the < span > elements connected to the .button class
-
-wmjQuery(".button").find("span")
-                  </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <li>
-            <li>
-                <a
-                  class="section-link"
-                  data-target="simpleModal_children"
-                  data-toggle="modal"
-                >
-                .children()
-                </a>
-              </li>
-              <div id="simpleModal_children" class="modal">
-                <div class="modal-window">
-                  <h2>.children() Method</h2>
-                  <p>
-                    The children() method returns all direct children of the selected element.
-                  </p>
-                  <div class="Container">
-                    <nav>
-                      <div class="current"></div>
-                      <a href="#one">jQuery</a>
-                    </nav>
-                    <div class="Contents">
-                      <div class="Content" id="one">
-                        <pre><code> 
-Return elements that are direct children of < ul >:
-
-wmjQuery("ul").children()
-                  </code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <li>
-            <a
-              class="section-link"
-              data-target="simpleModal_closest"
-              data-toggle="modal"
-            >
-            .closest()
-            </a>
-          </li>
-          <div id="simpleModal_closest" class="modal">
-            <div class="modal-window">
-              <h2>.closest() Method</h2>
-              <p>
-                For each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.
-              </p>
-              <div class="Container">
-                <nav>
-                  <div class="current"></div>
-                  <a href="#one">jQuery</a>
-                </nav>
-                <div class="Contents">
-                  <div class="Content" id="one">
-                    <pre><code> 
-Return the first ancestor of < span >, that is an < ul > element:
-
-wmjQuery("span").closest("ul")
-              </code></pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </li>
       <li>
-        <a
-          class="section-link"
-          data-target="simpleModal_next"
-          data-toggle="modal"
-        >
-        .next()
+      <li>
+        <a class="section-link" data-target="simpleModal_contains" data-toggle="modal">
+          :contains()
         </a>
       </li>
-      <div id="simpleModal_next" class="modal">
+      <div id="simpleModal_contains" class="modal">
         <div class="modal-window">
-          <h2>.next() Method</h2>
+          <h2>:contains() Selector</h2>
           <p>
-            Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
+            The :contains() selector selects elements containing the specified string.
           </p>
           <div class="Container">
             <nav>
@@ -1137,10 +156,10 @@ wmjQuery("span").closest("ul")
             <div class="Contents">
               <div class="Content" id="one">
                 <pre><code> 
-Return the next sibling element of each < li > element with class name "start":
+Select all < h1 > elements containing "WalkMe":
 
-wmjQuery("li.start").next()
-          </code></pre>
+wmjQuery('h1:contains(WalkMe)')
+                  </code></pre>
               </div>
             </div>
           </div>
@@ -1148,19 +167,887 @@ wmjQuery("li.start").next()
       </div>
   </li>
   <li>
-    <a
-      class="section-link"
-      data-target="simpleModal_prev"
-      data-toggle="modal"
-    >
-    .prev()
+  <li>
+    <a class="section-link" data-target="simpleModal_empty" data-toggle="modal">
+      :empty
+    </a>
+  </li>
+  <div id="simpleModal_empty" class="modal">
+    <div class="modal-window">
+      <h2>:empty Selector</h2>
+      <p>
+        The :empty selector selects empty elements. An empty element is an element without child elements or text.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+wmjQuery(':empty')
+                  </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+  <li>
+    <a class="section-link" data-target="simpleModal_has" data-toggle="modal">
+      :has()
+    </a>
+  </li>
+  <div id="simpleModal_has" class="modal">
+    <div class="modal-window">
+      <h2>:has() Selector</h2>
+      <p>
+        The :has() selector selects all elements that have one or more elements inside of them, that matches the
+        specified selector.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+wmjQuery("p:has(span)")
+                  </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+  <li>
+    <a class="section-link" data-target="simpleModal_parent" data-toggle="modal">
+      :parent
+    </a>
+  </li>
+  <div id="simpleModal_parent" class="modal">
+    <div class="modal-window">
+      <h2>:parent Selector</h2>
+      <p>
+        The :parent selector selects all elements that are the parent of another element, including text nodes.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Select all < td > elements with children, including text:
+
+wmjQuery("td:parent")
+                  </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  </ul>
+  </li>
+  <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="">
+      <small> Extensions </small>
+      DeepUI
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-target="simpleModal_deepuivisible" data-toggle="modal">
+          :deepui_visible
+        </a>
+      </li>
+      <div id="simpleModal_deepuivisible" class="modal">
+        <div class="modal-window">
+          <h2>:deepui_visible</h2>
+          <p>
+            Checks that the element has height and width and is on the
+            top/obscured (not covered in z-index). Use in cases where <strong>mt_visible</strong> is not strong enough.
+          </p>
+          <div class="Container">
+            <nav>
+              <div class="current"></div>
+              <a href="#one">jQuery</a>
+            </nav>
+            <div class="Contents">
+              <div class="Content" id="one">
+                <pre><code> 
+wmjQuery('td:deepui_visible')
+              </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li>
+      <li>
+        <a class="section-link" data-target="simpleModal_deepuihidden" data-toggle="modal">
+          :deepui_hidden
+        </a>
+      </li>
+      <div id="simpleModal_deepuihidden" class="modal">
+        <div class="modal-window">
+          <h2>:deepui_hidden</h2>
+          <p>
+            Used in the opposite way of <strong>deepui_visible</strong>
+          </p>
+          <div class="Container">
+            <nav>
+              <div class="current"></div>
+              <a href="#one">jQuery</a>
+            </nav>
+            <div class="Contents">
+              <div class="Content" id="one">
+                <pre><code> 
+wmjQuery('td:deepui_hidden')
+                  </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_textStartsWith" data-toggle="modal">
+      :textStartsWith()
+    </a>
+  </li>
+  <div id="simpleModal_textStartsWith" class="modal">
+    <div class="modal-window">
+      <h2>:textStartsWith()</h2>
+      <p>
+        Checks that text of element starts with input. Note that text is defined as wmjQuery(elem).text()
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+wmjQuery('td:textStartsWith(Account)')
+              </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_textEndsWith" data-toggle="modal">
+      :textEndsWith()
+    </a>
+  </li>
+  <div id="simpleModal_textEndsWith" class="modal">
+    <div class="modal-window">
+      <h2>:textEndsWith()</h2>
+      <p>
+        Checks that text of element ends with input.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+wmjQuery('td:textEndsWith(ing)')
+              </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_hasParent" data-toggle="modal">
+      :hasParent()
+    </a>
+  </li>
+  <div id="simpleModal_hasParent" class="modal">
+    <div class="modal-window">
+      <h2>:hasParent()</h2>
+      <p>
+        Verify that input element is an ancestor (parent, grandparent etc) of element
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+ wmjQuery(':hasParent(.labelCol)')
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_directContains" data-toggle="modal">
+      :directContains()
+    </a>
+  </li>
+  <div id="simpleModal_directContains" class="modal">
+    <div class="modal-window">
+      <h2>:directContains()</h2>
+      <p>
+        Similar to :contains() but checks only direct children and not all descendants
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+wmjQuery('.labelcol:directContains(Account)')
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_visualDown" data-toggle="modal">
+      .visualDown()
+    </a>
+  </li>
+  <div id="simpleModal_visualDown" class="modal">
+    <div class="modal-window">
+      <h2>.visualDown()</h2>
+      <p>
+        Get element that is visually below on screen
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+wmjQuery('.labelCol:first').visualDown()
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_visualRight" data-toggle="modal">
+      .visualRight()
+    </a>
+  </li>
+  <div id="simpleModal_visualRight" class="modal">
+    <div class="modal-window">
+      <h2>.visualRight()</h2>
+      <p>
+        Get element that is visually right on screen
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+wmjQuery('.labelCol:first').visualRight()
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_identity" data-toggle="modal">
+      .identity()
+    </a>
+  </li>
+  <div id="simpleModal_identity" class="modal">
+    <div class="modal-window">
+      <h2>.identity()</h2>
+      <p>
+        Return input. <strong>Will be translated by lexicon!</strong>
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+wmjQuery(IGNORED).identity(fixed.text)
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  </ul>
+  </li>
+  <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="">
+      <small> Options </small>
+      Data
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-scroll="" href="#data"> data </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#props"> props </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#propsData">
+          propsData
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#computed">
+          computed
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#methods"> methods </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#watch"> watch </a>
+      </li>
+    </ul>
+  </li>
+  <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Options-DOM">
+      <small> Options </small>
+      DOM
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-scroll="" href="#el"> el </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#template">
+          template
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#render"> render </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#renderError">
+          renderError
+          <var> 2.2 </var>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Options-Assets">
+      <small>Attributes</small>
+      Attributes
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+      <li>
+        <a class="section-link" data-target="simpleModal_attribute1" data-toggle="modal">
+          [name|=”value”]
+        </a>
+      </li>
+      <div id="simpleModal_attribute1" class="modal">
+        <div class="modal-window">
+          <h2>Attribute Contains Prefix Selector [name|=”value”]</h2>
+          <p>
+            Selects elements that have the specified attribute with a value either equal to a given string or starting
+            with that string followed by a hyphen (-).
+          </p>
+          <div class="Container">
+            <nav>
+              <div class="current"></div>
+              <a href="#one">jQuery</a>
+            </nav>
+            <div class="Contents">
+              <div class="Content" id="one">
+                <pre><code> 
+Select all < p > elements with a title attribute that 
+starts with the value "Tomorrow":
+
+wmjQuery("p[title|='Tomorrow']")
+                  </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_attribute2" data-toggle="modal">
+      [name*=”value”]
+    </a>
+  </li>
+  <div id="simpleModal_attribute2" class="modal">
+    <div class="modal-window">
+      <h2>Attribute Contains Selector [name*=”value”]</h2>
+      <p>
+        Selects elements that have the specified attribute with a value containing a given substring.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Select all < input > elements with a name attribute 
+that contains the word "nation":
+
+wmjQuery("input[name*='nation']")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_attribute3" data-toggle="modal">
+      [name~=”value”]
+    </a>
+  </li>
+  <div id="simpleModal_attribute3" class="modal">
+    <div class="modal-window">
+      <h2>Attribute Contains Word Selector [name~=”value”]</h2>
+      <p>
+        Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Select all < input > elements with a name attribute 
+that contains the specific word "nation":
+
+wmjQuery("input[name~='nation']")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_attribute4" data-toggle="modal">
+      [name$=”value”]
+    </a>
+  </li>
+  <div id="simpleModal_attribute4" class="modal">
+    <div class="modal-window">
+      <h2>Attribute Ends With Selector [name$=”value”]</h2>
+      <p>
+        Selects elements that have the specified attribute with a value ending exactly with a given string. The
+        comparison is case sensitive.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Select all < a > elements with a href attribute that 
+ends with ".org":
+
+wmjQuery("a[href$='.org']")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_attribute5" data-toggle="modal">
+      [name=”value”]
+    </a>
+  </li>
+  <div id="simpleModal_attribute5" class="modal">
+    <div class="modal-window">
+      <h2>Attribute Equals Selector [name=”value”]</h2>
+      <p>
+        Selects elements that have the specified attribute with a value exactly equal to a certain value.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Select every element containing an input attribute with 
+the value "price":
+
+wmjQuery("[id='price']")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_attribute6" data-toggle="modal">
+      [name!=”value”]
+    </a>
+  </li>
+  <div id="simpleModal_attribute6" class="modal">
+    <div class="modal-window">
+      <h2>Attribute Not Equal Selector [name!=”value”]</h2>
+      <p>
+        Select elements that either don't have the specified attribute, or do have the specified attribute but not with
+        a certain value.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Select all < p > elements <strong>NOT</strong> containing a class 
+attribute with the value "intro":
+
+wmjQuery("p[class!='intro']")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_attribute7" data-toggle="modal">
+      [name^=”value”]
+    </a>
+  </li>
+  <div id="simpleModal_attribute7" class="modal">
+    <div class="modal-window">
+      <h2>Attribute Starts With Selector [name^=”value”]</h2>
+      <p>
+        Selects elements that have the specified attribute with a value beginning exactly with a given string.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Select all < input > elements with a name attribute 
+that starts with "nation":
+
+wmjQuery("input[name^='nation']")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  </ul>
+  </li>
+  <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Options-Composition">
+      <small> Options </small>
+      Composition
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-scroll="" href="#parent"> parent </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#mixins"> mixins </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#extends"> extends </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#provide-inject">
+          provide / inject
+          <var> 2.2 </var>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Options-Misc">
+      <small> Options </small>
+      Misc
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-scroll="" href="#name"> name </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#delimiters">
+          delimiters
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#functional">
+          functional
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#model">
+          model
+          <var> 2.2 </var>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-light-blue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Instance-Methods-Data">
+      <small> Methods </small>
+      Data
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-watch">
+          vm.$watch
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-set"> vm.$set </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-delete">
+          vm.$delete
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-light-blue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Instance-Methods-Events">
+      <small>Traversing</small>
+      Filtering
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-target="simpleModal_filter" data-toggle="modal">
+          .filter()
+        </a>
+      </li>
+      <div id="simpleModal_filter" class="modal">
+        <div class="modal-window">
+          <h2>.filter() Method</h2>
+          <p>
+            The filter() method lets you specify a criteria. Elements that do not match the criteria are removed from
+            the selection, and those that match will be returned.
+          </p>
+          <div class="Container">
+            <nav>
+              <div class="current"></div>
+              <a href="#one">jQuery</a>
+            </nav>
+            <div class="Contents">
+              <div class="Content" id="one">
+                <pre><code> 
+Return all < p > elements with class name "intro":
+
+wmjQuery("p").filter(".intro")
+            </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </li>
+  </ul>
+  </li>
+  <li class="color-light-blue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Instance-Methods-Lifecycle">
+      <small> Traversing </small>
+      Traverse
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-target="simpleModal_find" data-toggle="modal">
+          .find()
+        </a>
+      </li>
+      <div id="simpleModal_find" class="modal">
+        <div class="modal-window">
+          <h2>.find() Method</h2>
+          <p>
+            Finds all the descendant elements of the selected element. It will traverse all the way down to the last
+            leaf of the selected element in the DOM tree.
+          </p>
+          <div class="Container">
+            <nav>
+              <div class="current"></div>
+              <a href="#one">jQuery</a>
+            </nav>
+            <div class="Contents">
+              <div class="Content" id="one">
+                <pre><code> 
+Select all the < span > elements connected to the .button class
+
+wmjQuery(".button").find("span")
+                  </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </li>
+  <li>
+  <li>
+    <a class="section-link" data-target="simpleModal_children" data-toggle="modal">
+      .children()
+    </a>
+  </li>
+  <div id="simpleModal_children" class="modal">
+    <div class="modal-window">
+      <h2>.children() Method</h2>
+      <p>
+        The children() method returns all direct children of the selected element.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Return elements that are direct children of < ul >:
+
+wmjQuery("ul").children()
+                  </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_closest" data-toggle="modal">
+      .closest()
+    </a>
+  </li>
+  <div id="simpleModal_closest" class="modal">
+    <div class="modal-window">
+      <h2>.closest() Method</h2>
+      <p>
+        For each element in the set, get the first element that matches the selector by testing the element itself and
+        traversing up through its ancestors in the DOM tree.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Return the first ancestor of < span >, that is an < ul > element:
+
+wmjQuery("span").closest("ul")
+              </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_next" data-toggle="modal">
+      .next()
+    </a>
+  </li>
+  <div id="simpleModal_next" class="modal">
+    <div class="modal-window">
+      <h2>.next() Method</h2>
+      <p>
+        Get the immediately following sibling of each element in the set of matched elements. If a selector is provided,
+        it retrieves the next sibling only if it matches that selector.
+      </p>
+      <div class="Container">
+        <nav>
+          <div class="current"></div>
+          <a href="#one">jQuery</a>
+        </nav>
+        <div class="Contents">
+          <div class="Content" id="one">
+            <pre><code> 
+Return the next sibling element of each < li > element with class name "start":
+
+wmjQuery("li.start").next()
+          </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </li>
+  <li>
+    <a class="section-link" data-target="simpleModal_prev" data-toggle="modal">
+      .prev()
     </a>
   </li>
   <div id="simpleModal_prev" class="modal">
     <div class="modal-window">
       <h2>.prev() Method</h2>
       <p>
-        Get the immediately preceding sibling of each element in the set of matched elements. If a selector is provided, it retrieves the previous sibling only if it matches that selector.
+        Get the immediately preceding sibling of each element in the set of matched elements. If a selector is provided,
+        it retrieves the previous sibling only if it matches that selector.
       </p>
       <div class="Container">
         <nav>
@@ -1179,452 +1066,435 @@ wmjQuery("li.start").prev()
       </div>
     </div>
   </div>
-</li>
-        </ul>
-      </li>
-      <li class="color-blue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Instance-Properties">
-          <small> Instance </small>
-          Properties
-        </a>
+  </li>
+  </ul>
+  </li>
+  <li class="color-blue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Instance-Properties">
+      <small> Instance </small>
+      Properties
+    </a>
 
-        <ul class="menu-sub">
+    <ul class="menu-sub">
 
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-data">
-              vm.$data
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-props">
-              vm.$props
-              <var> 2.2 </var>
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-el"> vm.$el </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-options">
-              vm.$options
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-parent">
-              vm.$parent
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-root">
-              vm.$root
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-children">
-              vm.$children
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-slots">
-              vm.$slots
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-scopedSlots">
-              vm.$scopedSlots
-              <var> 2.1 </var>
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-refs">
-              vm.$refs
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#vm-isServer">
-              vm.$isServer
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="color-red" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Directives">
-          <small> html </small>
-          Directives
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-data">
+          vm.$data
         </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a class="section-link" data-scroll="" href="#v-text"> v-text </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-html"> v-html </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-show"> v-show </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-if"> v-if </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-else"> v-else </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-else-if">
-              v-else-if
-              <var> 2.1 </var>
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-for"> v-for </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-on"> v-on </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-bind"> v-bind </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-model"> v-model </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-pre"> v-pre </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-cloak"> v-cloak </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#v-once"> v-once </a>
-          </li>
-        </ul>
       </li>
-      <li class="color-purple" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a>
-          Directives
-          <small> Hooks </small>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-props">
+          vm.$props
+          <var> 2.2 </var>
         </a>
-        <ul>
-          <li>
-            <a
-              href=""
-            >
-              bind
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-            >
-              inserted
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-            >
-              update
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-            >
-              componentUpdated
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-            >
-              unbind
-            </a>
-          </li>
-        </ul>
       </li>
-      <li class="color-yellow" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Special-Attributes">
-          <small> html </small>
-          Attributes
-        </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a class="section-link" data-scroll="" href="#key"> key </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#ref"> ref </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#slot"> slot </a>
-          </li>
-        </ul>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-el"> vm.$el </a>
       </li>
-      <li class="color-green" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a class="section-link" data-scroll="" href="#Built-In-Components">
-          <small> Built-In </small>
-          Components
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-options">
+          vm.$options
         </a>
-
-        <ul class="menu-sub">
-
-          <li>
-            <a class="section-link" data-scroll="" href="#component">
-              component
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#transition">
-              transition
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#transition-group">
-              transition-group
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#keep-alive">
-              keep-alive
-            </a>
-          </li>
-          <li>
-            <a class="section-link" data-scroll="" href="#slot-1"> slot </a>
-          </li>
-        </ul>
       </li>
-      <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a>
-          v-model
-          <small> Modifiers </small>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-parent">
+          vm.$parent
         </a>
-        <ul>
-          <li>
-            <a href="">
-              <small> v-model </small>
-              .lazy
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-model </small>
-              .number
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-model </small>
-              .trim
-            </a>
-          </li>
-        </ul>
       </li>
-      <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a>
-          Event
-          <small> Modifiers </small>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-root">
+          vm.$root
         </a>
-        <ul>
-          <li>
-            <a
-              href=""
-            >
-              <small> v-on:click </small>
-              .native
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:click </small>
-              .stop
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:click </small>
-              .prevent
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:click </small>
-              .passive
-              <var> 2.3 </var>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:click </small>
-              .capture
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:click </small>
-              .self
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:click </small>
-              .once
-              <var> 2.1.4 </var>
-            </a>
-          </li>
-        </ul>
       </li>
-      <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a>
-          v-bind
-          <small> Modifiers </small>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-children">
+          vm.$children
         </a>
-        <ul>
-          <li>
-            <a href="">
-              <small> v-bind </small>
-              .prop
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-bind </small>
-              .camel
-              <var> 2.1 </var>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-bind </small>
-              .sync
-              <var> 2.3 </var>
-            </a>
-          </li>
-        </ul>
       </li>
-      <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a>
-          Mouse
-          <small> Modifiers </small>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-slots">
+          vm.$slots
         </a>
-        <ul>
-          <li>
-            <a
-              href=""
-            >
-              <small> v-on:click </small>
-              .left
-              <var> 2.2 </var>
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-            >
-              <small> v-on:click </small>
-              .right
-              <var> 2.2 </var>
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-            >
-              <small> v-on:click </small>
-              .middle
-              <var> 2.2 </var>
-            </a>
-          </li>
-        </ul>
       </li>
-      <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-        <a>
-          Keyboard
-          <small> Modifiers </small>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-scopedSlots">
+          vm.$scopedSlots
+          <var> 2.1 </var>
         </a>
-        <ul>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .ctrl
-              <var> 2.1 </var>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .alt
-              <var> 2.1 </var>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .shift
-              <var> 2.1 </var>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .meta
-              <var> 2.1 </var>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .enter
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .tab
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .delete
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .esc
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .up
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .down
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .left
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <small> v-on:keyup </small>
-              .right
-            </a>
-          </li>
-        </ul>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-refs">
+          vm.$refs
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#vm-isServer">
+          vm.$isServer
+        </a>
       </li>
     </ul>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  </li>
+  <li class="color-red" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Directives">
+      <small> html </small>
+      Directives
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-scroll="" href="#v-text"> v-text </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-html"> v-html </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-show"> v-show </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-if"> v-if </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-else"> v-else </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-else-if">
+          v-else-if
+          <var> 2.1 </var>
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-for"> v-for </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-on"> v-on </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-bind"> v-bind </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-model"> v-model </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-pre"> v-pre </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-cloak"> v-cloak </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#v-once"> v-once </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-purple" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a>
+      Directives
+      <small> Hooks </small>
+    </a>
+    <ul>
+      <li>
+        <a href="">
+          bind
+        </a>
+      </li>
+      <li>
+        <a href="">
+          inserted
+        </a>
+      </li>
+      <li>
+        <a href="">
+          update
+        </a>
+      </li>
+      <li>
+        <a href="">
+          componentUpdated
+        </a>
+      </li>
+      <li>
+        <a href="">
+          unbind
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-yellow" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Special-Attributes">
+      <small> html </small>
+      Attributes
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-scroll="" href="#key"> key </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#ref"> ref </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#slot"> slot </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-green" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a class="section-link" data-scroll="" href="#Built-In-Components">
+      <small> Built-In </small>
+      Components
+    </a>
+
+    <ul class="menu-sub">
+
+      <li>
+        <a class="section-link" data-scroll="" href="#component">
+          component
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#transition">
+          transition
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#transition-group">
+          transition-group
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#keep-alive">
+          keep-alive
+        </a>
+      </li>
+      <li>
+        <a class="section-link" data-scroll="" href="#slot-1"> slot </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a>
+      v-model
+      <small> Modifiers </small>
+    </a>
+    <ul>
+      <li>
+        <a href="">
+          <small> v-model </small>
+          .lazy
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-model </small>
+          .number
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-model </small>
+          .trim
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a>
+      Event
+      <small> Modifiers </small>
+    </a>
+    <ul>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .native
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .stop
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .prevent
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .passive
+          <var> 2.3 </var>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .capture
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .self
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .once
+          <var> 2.1.4 </var>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a>
+      v-bind
+      <small> Modifiers </small>
+    </a>
+    <ul>
+      <li>
+        <a href="">
+          <small> v-bind </small>
+          .prop
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-bind </small>
+          .camel
+          <var> 2.1 </var>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-bind </small>
+          .sync
+          <var> 2.3 </var>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a>
+      Mouse
+      <small> Modifiers </small>
+    </a>
+    <ul>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .left
+          <var> 2.2 </var>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .right
+          <var> 2.2 </var>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:click </small>
+          .middle
+          <var> 2.2 </var>
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="color-brown" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+    <a>
+      Keyboard
+      <small> Modifiers </small>
+    </a>
+    <ul>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .ctrl
+          <var> 2.1 </var>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .alt
+          <var> 2.1 </var>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .shift
+          <var> 2.1 </var>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .meta
+          <var> 2.1 </var>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .enter
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .tab
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .delete
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .esc
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .up
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .down
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .left
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <small> v-on:keyup </small>
+          .right
+        </a>
+      </li>
+    </ul>
+  </li>
+  </ul>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
