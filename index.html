@@ -11,14 +11,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>jQuery Cheat Sheet</title>
-  <link rel="icon" type="image/png" href="images/images/jqueryicon.png" />
+  <link rel="icon" type="image/png" href="images/jqueryicon.png" />
 </head>
 
 <body>
   <header class="header">
-    <h2 class="logo">
-      <a href="#"><img src="images/jquerycheatsheet.svg" width="190px" alt="Jquerycheatsheet.com Logo" /></a>
-    </h2>
+    <div class="logo">
+      <a href="/"><img src="images/jquerycheatsheet.svg" width="190px" alt="Jquerycheatsheet.com Logo" /></a>
+    </div>
     <ul class="main-nav"></ul>
   </header>
   <ul class="menu-root">
@@ -33,10 +33,7 @@
       <ul class="menu-sub">
 
         <li>
-          <a class="section-link" data-target="simpleModal_eq" data-toggle="modal">
-            :eq()
-            <var> 2.2 </var>
-          </a>
+          <a class="section-link" data-target="simpleModal_eq" data-toggle="modal">:eq()<var> 2.2 </var></a>
         </li>
         <div id="simpleModal_eq" class="modal">
           <div class="modal-window">
@@ -45,14 +42,11 @@
                   src="images/jquery.svg" alt="jQuery API"></a>
               <h2>:eq() Selector</h2>
             </div>
-            <p>
-              The :eq() selector selects an element with a specific index
-              number
-            </p>
+            <p>The :eq() selector selects an element with a specific index number. The index numbers start at 0, so the first element will have the index number 0 (not 1).</p>
             <div class="Container">
               <nav>
                 <div class="current"></div>
-                <a href="#one">jQuery</a>
+                <span>jQuery</span>
               </nav>
               <div class="Contents">
                 <div class="Content" id="one">

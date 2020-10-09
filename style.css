@@ -2,22 +2,26 @@ html,
 body {
   background-color: #f1f6fa;
 }
+
 body {
   color: white;
   font-size: 16px;
   font-family: Helvetica, Arial;
 }
+
 ul {
   list-style: none;
   padding: unset;
 }
+
 .menu-root {
   padding: 10px;
   padding-bottom: 10px;
   column-gap: 10px;
   column-count: 8;
 }
-.menu-root > li {
+
+.menu-root>li {
   background-color: #eee;
   padding: 10px;
   margin-bottom: 5px;
@@ -27,43 +31,54 @@ ul {
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(50, 50, 93, 0.1), 0 1px 1.5px rgba(0, 0, 0, 0.07);
 }
-.menu-root > .color-light-purple {
+
+.menu-root>.color-light-purple {
   background-color: #fff;
 }
-.menu-root > #lightblue {
+
+.menu-root>#lightblue {
   background-color: #def3fd;
 }
-.menu-root > .color-light-blue {
+
+.menu-root>.color-light-blue {
   background-color: #fbb3bd;
 }
-.menu-root > .color-blue {
+
+.menu-root>.color-blue {
   background-color: #dfd3f5;
 }
-.menu-root > .color-red {
+
+.menu-root>.color-red {
   background-color: #ccf6c8;
 }
-.menu-root > .color-purple {
+
+.menu-root>.color-purple {
   background-color: #e4ffde;
 }
-.menu-root > .color-yellow {
+
+.menu-root>.color-yellow {
   background-color: #ccd4bf;
 }
-.menu-root > .color-green {
+
+.menu-root>.color-green {
   background-color: #eb96aa;
 }
-.menu-root > .color-brown {
+
+.menu-root>.color-brown {
   background-color: #fcd483;
 }
+
 .databox:active {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.menu-root > li > a,
-.menu-root > li > a > small {
+
+.menu-root>li>a,
+.menu-root>li>a>small {
   font-size: 7px;
   color: #343d46;
 }
 
-.menu-root > li > a > small {
+.menu-root>li>a>small {
   float: right;
   border-radius: 5px;
   padding: 2px 2px 1px 2px;
@@ -74,7 +89,7 @@ ul {
   pointer-events: none;
 }
 
-.menu-root > li > a::first-line {
+.menu-root>li>a::first-line {
   font-size: 18px;
   color: black;
   font-weight: bold;
@@ -97,6 +112,7 @@ ul {
   padding: 2px 4px;
   border-radius: 5px;
 }
+
 /* 
 .menu-root ul li:nth-child(odd) a {
   color: #e6e6e6;
@@ -123,9 +139,10 @@ a {
 }
 
 @media (min-width: 1440px) {
-  .menu-root > li:nth-child(2),
-  .menu-root > li:nth-child(12),
-  .menu-root > li:nth-child(14) {
+
+  .menu-root>li:nth-child(2),
+  .menu-root>li:nth-child(12),
+  .menu-root>li:nth-child(14) {
     break-after: column;
   }
 }
@@ -137,6 +154,7 @@ a {
     flex-grow: 1;
     width: auto;
   }
+
   .modal-window {
     width: 80% !important;
   }
@@ -146,6 +164,7 @@ a {
   .menu-root {
     column-count: 2;
   }
+
   .modal-window {
     width: 98% !important;
   }
@@ -167,6 +186,7 @@ a {
   .menu-root {
     column-count: 5;
   }
+
   .menu-root ul li a {
     padding: 2px 5px;
   }
@@ -176,6 +196,7 @@ a {
   .menu-root {
     column-count: 6;
   }
+
   .menu-root ul li a {
     padding: 3px 5px;
   }
@@ -200,9 +221,9 @@ a {
     font-size: 18px;
   }
 
-  .menu-root > li:nth-child(8),
-  .menu-root > li:nth-child(16),
-  .menu-root > li:nth-child(19) {
+  .menu-root>li:nth-child(8),
+  .menu-root>li:nth-child(16),
+  .menu-root>li:nth-child(19) {
     break-after: column;
   }
 
@@ -216,7 +237,7 @@ a {
 }
 
 @media print and (max-width: 1920px) {
-  .menu-root > li:nth-child(8) {
+  .menu-root>li:nth-child(8) {
     break-after: column;
   }
 
@@ -235,12 +256,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin: 0;
   min-height: 100vh;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -264,6 +287,7 @@ a {
 .main-nav {
   margin-top: 5px;
 }
+
 .logo a,
 .main-nav a {
   padding: 10px 15px;
@@ -288,10 +312,12 @@ a {
 }
 
 @media (min-width: 769px) {
+
   .header,
   .main-nav {
     display: flex;
   }
+
   .header {
     flex-direction: column;
     align-items: center;
@@ -326,10 +352,13 @@ a {
   padding: 5px 20px 20px 20px;
   border-radius: 6px;
 }
+
 .modal-heading h2 {
   font-size: 1.8em;
   margin-bottom: 0px;
+  text-align: center;
 }
+
 .modal-window p {
   color: #000000;
 }
@@ -352,12 +381,14 @@ a {
   background: #282b36;
   box-shadow: 0 10px 40px 0 rgba(40, 43, 54, 0.3);
 }
+
 .Container nav {
   top: 15px;
   left: 15px;
   position: absolute;
 }
-.Container nav a {
+
+.Container nav span {
   z-index: 2;
   color: #a5aaaf;
   font-size: 13px;
@@ -366,10 +397,7 @@ a {
   display: inline-block;
   text-decoration: none;
 }
-.Container nav a:hover,
-.Container nav a {
-  color: white;
-}
+
 .Container nav .current {
   top: 0;
   left: 0;
@@ -405,10 +433,12 @@ a {
   float: right;
   cursor: pointer;
 }
+
 .api-button img {
   width: 20px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
+
 .api-button img:hover {
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
