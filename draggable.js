@@ -1,4 +1,4 @@
-$(function () {
-  $(".menu-root").sortable();
-  $(".menu-root").disableSelection();
-});
+// $(function () {
+//   $(".menu-root").sortable();
+//   $(".menu-root").disableSelection();
+// });

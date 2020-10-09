@@ -294,11 +294,6 @@ a {
   .header {
     flex-direction: column;
     align-items: center;
-    .header {
-      width: 80%;
-      margin: 0 auto;
-      max-width: 1150px;
-    }
   }
 }
 
@@ -367,7 +362,7 @@ a {
   text-decoration: none;
 }
 .Container nav a:hover,
-.Container nav a.active {
+.Container nav a {
   color: white;
 }
 .Container nav .current {
@@ -395,16 +390,6 @@ a {
   font-size: 15px;
   line-height: 24px;
   padding: 32px 30px 15px 30px;
-}
-.Container .Content .hljs {
-  padding: 0;
-  font-size: 13px;
-  line-height: 24px;
-  font-family: Consolas, Monaco, monospace;
-}
-
-.hljs-number {
-  color: #ffc24c;
 }
 
 .credit {
