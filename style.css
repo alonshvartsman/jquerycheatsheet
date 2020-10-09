@@ -323,8 +323,12 @@ a {
   background-color: #ffffff;
   width: 50%;
   margin: 10% auto;
-  padding: 20px;
+  padding: 5px 20px 20px 20px;
   border-radius: 6px;
+}
+.modal-heading h2 {
+  font-size: 1.8em;
+  margin-bottom: 0px;
 }
 .modal-window p {
   color: #000000;
@@ -395,4 +399,17 @@ a {
 
 .code-example {
   color: yellow;
+}
+
+.api-button {
+  float: right;
+  cursor: pointer;
+}
+.api-button img {
+  width: 20px;
+  vertical-align: middle;
+}
+.api-button img:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
 }
