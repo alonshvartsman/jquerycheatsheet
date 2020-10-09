@@ -388,27 +388,6 @@ a {
   position: absolute;
 }
 
-.Container nav span {
-  z-index: 2;
-  color: #a5aaaf;
-  font-size: 13px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.Container nav .current {
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 50px;
-  height: 24px;
-  border-radius: 3px;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 .Container .Contents {
   width: 100%;
   display: flex;
@@ -435,11 +414,15 @@ a {
 }
 
 .api-button img {
-  width: 20px;
-  vertical-align: bottom;
+  width: 30px;
+  vertical-align: text-top;
 }
 
 .api-button img:hover {
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
+}
+
+.current img {
+  width: 20px;
 }

@@ -32,24 +32,45 @@
 
       <ul class="menu-sub">
 
-        <li>
-          <a class="section-link" data-target="simpleModal_eq" data-toggle="modal">:eq()<var> 2.2 </var></a>
-        </li>
+        <li><a class="section-link" data-target="simpleModal_all" data-toggle="modal">*</a></li>
+        <div id="simpleModal_all" class="modal">
+          <div class="modal-window">
+            <div class="modal-heading">
+              <a class="api-button" href="https://api.jquery.com/all-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+              <h2>All Selector (“*”)</h2>
+            </div>
+            <p>Select all elements inside the document:</p>
+            <div class="Container">
+              <nav>
+              <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+              </nav>
+              <div class="Contents">
+                <div class="Content">
+                  <pre><code> 
+<span class="code-example">Select all elements inside the document:</span>
+
+$("*")
+              </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <li><a class="section-link" data-target="simpleModal_eq" data-toggle="modal">:eq()</a></li>
         <div id="simpleModal_eq" class="modal">
           <div class="modal-window">
             <div class="modal-heading">
-              <a class="api-button" href="https://api.jquery.com/eq-selector/" target="_blank"><img
-                  src="images/jquery.svg" alt="jQuery API"></a>
+              <a class="api-button" href="https://api.jquery.com/eq-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
               <h2>:eq() Selector</h2>
             </div>
             <p>The :eq() selector selects an element with a specific index number. The index numbers start at 0, so the first element will have the index number 0 (not 1).</p>
             <div class="Container">
               <nav>
-                <div class="current"></div>
-                <span>jQuery</span>
+              <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
               </nav>
               <div class="Contents">
-                <div class="Content" id="one">
+                <div class="Content">
                   <pre><code> 
 <span class="code-example">Select the second < p > element:</span>
 
