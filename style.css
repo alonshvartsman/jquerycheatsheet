@@ -30,7 +30,7 @@ ul {
 .menu-root > .color-light-purple {
   background-color: #fff;
 }
-.menu-root > .color-orange {
+.menu-root > #lightblue {
   background-color: #def3fd;
 }
 .menu-root > .color-light-blue {
@@ -242,11 +242,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-li:active {
-  /* box-shadow: 0 0 0 3px #fff;
-  cursor: -webkit-grabbing;
-  transform: translateX(0px) translateY(4px); */
 }
 
 h2,
