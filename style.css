@@ -356,7 +356,6 @@ a {
 .modal-heading h2 {
   font-size: 1.8em;
   margin-bottom: 0px;
-  text-align: center;
 }
 
 .modal-window p {
@@ -401,7 +400,7 @@ a {
   color: #ffffff;
   font-size: 15px;
   line-height: 24px;
-  padding: 32px 30px 15px 30px;
+  padding: 32px 30px 25px 30px;
 }
 
 .code-example {
