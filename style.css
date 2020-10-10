@@ -403,6 +403,10 @@ a {
   padding: 32px 30px 25px 30px;
 }
 
+pre {
+  white-space: break-spaces;
+}
+
 .code-example {
   color: yellow;
   white-space: normal;
