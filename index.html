@@ -798,159 +798,131 @@ $("input[name*='country']")
         </div>
       </div>  
 
+      <li><a class="section-link" data-target="simpleModal_attribute3" data-toggle="modal">[name~=”value”]</a></li>
+      <div id="simpleModal_attribute3" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/attribute-contains-word-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>Attribute Contains Word Selector [name~=”value”]</h2>
+          </div>
+          <p>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all &lt;input&gt; elements with a name attribute that contains the specific word "age":</span>
 
-  <li>
-    <a class="section-link" data-target="simpleModal_attribute3" data-toggle="modal">
-      [name~=”value”]
-    </a>
-  </li>
-  <div id="simpleModal_attribute3" class="modal">
-    <div class="modal-window">
-      <h2>Attribute Contains Word Selector [name~=”value”]</h2>
-      <p>
-        Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-Select all < input > elements with a name attribute 
-that contains the specific word "nation":
-
-wmjQuery("input[name~='nation']")
-            </code></pre>
+$("input[name~='age']")
+</code></pre>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </li>
-  <li>
-    <a class="section-link" data-target="simpleModal_attribute4" data-toggle="modal">
-      [name$=”value”]
-    </a>
-  </li>
-  <div id="simpleModal_attribute4" class="modal">
-    <div class="modal-window">
-      <h2>Attribute Ends With Selector [name$=”value”]</h2>
-      <p>
-        Selects elements that have the specified attribute with a value ending exactly with a given string. The
-        comparison is case sensitive.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-Select all < a > elements with a href attribute that 
-ends with ".org":
+      </div>        
 
-wmjQuery("a[href$='.org']")
-            </code></pre>
+      <li><a class="section-link" data-target="simpleModal_attribute4" data-toggle="modal">[name$=”value”]</a></li>
+      <div id="simpleModal_attribute4" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/attribute-ends-with-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>Attribute Ends With Selector [name$=”value”]</h2>
+          </div>
+          <p>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all &lt;a&gt; elements with a href attribute that ends with ".org":</span>
+
+$("a[href$='.org']")
+</code></pre>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </li>
-  <li>
-    <a class="section-link" data-target="simpleModal_attribute5" data-toggle="modal">
-      [name=”value”]
-    </a>
-  </li>
-  <div id="simpleModal_attribute5" class="modal">
-    <div class="modal-window">
-      <h2>Attribute Equals Selector [name=”value”]</h2>
-      <p>
-        Selects elements that have the specified attribute with a value exactly equal to a certain value.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-Select every element containing an input attribute with 
-the value "price":
+      </div>  
 
-wmjQuery("[id='price']")
-            </code></pre>
+      <li><a class="section-link" data-target="simpleModal_attribute5" data-toggle="modal">[name=”value”]</a></li>
+      <div id="simpleModal_attribute5" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/attribute-equals-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>Attribute Equals Selector [name=”value”]</h2>
+          </div>
+          <p>Selects elements that have the specified attribute with a value exactly equal to a certain value.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select every element containing an input attribute with the value "price":</span>
+
+$("[id='price']")
+</code></pre>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </li>
-  <li>
-    <a class="section-link" data-target="simpleModal_attribute6" data-toggle="modal">
-      [name!=”value”]
-    </a>
-  </li>
-  <div id="simpleModal_attribute6" class="modal">
-    <div class="modal-window">
-      <h2>Attribute Not Equal Selector [name!=”value”]</h2>
-      <p>
-        Select elements that either don't have the specified attribute, or do have the specified attribute but not with
-        a certain value.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-Select all < p > elements <strong>NOT</strong> containing a class 
-attribute with the value "intro":
+      </div>  
 
-wmjQuery("p[class!='intro']")
-            </code></pre>
+      <li><a class="section-link" data-target="simpleModal_attribute6" data-toggle="modal">[name!=”value”]</a></li>
+      <div id="simpleModal_attribute6" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/attribute-not-equal-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>Attribute Not Equal Selector [name!=”value”]</h2>
+          </div>
+          <p>Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all < p > elements <strong>NOT</strong> containing a class attribute with the value "intro":</span>
+
+$("p[class!='intro']")
+</code></pre>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </li>
-  <li>
-    <a class="section-link" data-target="simpleModal_attribute7" data-toggle="modal">
-      [name^=”value”]
-    </a>
-  </li>
-  <div id="simpleModal_attribute7" class="modal">
-    <div class="modal-window">
-      <h2>Attribute Starts With Selector [name^=”value”]</h2>
-      <p>
-        Selects elements that have the specified attribute with a value beginning exactly with a given string.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-Select all < input > elements with a name attribute 
-that starts with "nation":
+      </div>  
 
-wmjQuery("input[name^='nation']")
-            </code></pre>
+      <li><a class="section-link" data-target="simpleModal_attribute7" data-toggle="modal">[name^=”value”]</a></li>
+      <div id="simpleModal_attribute7" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/attribute-starts-with-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>Attribute Starts With Selector [name^=”value”]</h2>
+          </div>
+          <p>Selects elements that have the specified attribute with a value beginning exactly with a given string.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all &lt;input&gt; elements with a name attribute that starts with "contact":</span>
+
+$("input[name^='contact']")
+</code></pre>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </li>
+      </div>  
+
   </ul>
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
