@@ -112,11 +112,13 @@ ul {
   border-radius: 5px;
 }
 
-/* 
-.menu-root ul li:nth-child(odd) a {
-  color: #e6e6e6;
-  background-color: rgba(0, 0, 0, 0.05);
-} */
+.jqueryfunc {
+  color: #FFE66D;
+}
+
+.jqueryselector {
+  color: #96E072;
+}
 
 a {
   /* border-radius: 10px; */
@@ -407,7 +409,7 @@ pre {
 }
 
 .code-example {
-  color: yellow;
+  color: #fff;
   white-space: normal;
 }
 
