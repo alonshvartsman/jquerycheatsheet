@@ -927,27 +927,37 @@ $("input[name^='contact']")
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
     <a class="section-link" href="#Options-Composition">
-      <small> Options </small>
-      Composition
+      <small> Selectors </small>
+      Child Filters
     </a>
 
     <ul class="menu-sub">
 
-      <li>
-        <a class="section-link" href="#parent"> parent </a>
-      </li>
-      <li>
-        <a class="section-link" href="#mixins"> mixins </a>
-      </li>
-      <li>
-        <a class="section-link" href="#extends"> extends </a>
-      </li>
-      <li>
-        <a class="section-link" href="#provide-inject">
-          provide / inject
-          <var> 2.2 </var>
-        </a>
-      </li>
+      <li><a class="section-link" data-target="simpleModal_firstchild" data-toggle="modal">:first-child</a></li>
+      <div id="simpleModal_firstchild" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/first-child-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:first-child Selector</h2>
+          </div>
+          <p>Selects all elements that are the first child of their parent.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select every &lt;p&gt; element that is the first child of its parent:</span>
+
+$("p:first-child")
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
     </ul>
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
