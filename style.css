@@ -430,3 +430,10 @@ pre {
 .current img {
   width: 20px;
 }
+
+.selector-list-description {
+  color: #000000;
+  font-size: 14px;
+  list-style: outside;
+  margin-left: 18px;
+}

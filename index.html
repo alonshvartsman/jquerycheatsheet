@@ -270,7 +270,7 @@ $("div ~ p")
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
     <a class="section-link">
-      <small> Extensions </small>
+      <small> Selectors </small>
       Basic Filters
     </a>
 
@@ -401,6 +401,31 @@ $("p:first")
         </div>
       </div> 
 
+      <li><a class="section-link" data-target="simpleModal_last" data-toggle="modal">:last</a></li>
+      <div id="simpleModal_last" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/last-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:last Selector</h2>
+          </div>
+          <p>Selects the last element. <strong>Note:</strong> This selector can only select one single element. Use the <strong>:last-child</strong> selector to select more than one element (one for each parent).</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select the last &lt;p&gt; element:</span>
+
+$("p:last")
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
       <li><a class="section-link" data-target="simpleModal_header" data-toggle="modal">:header</a></li>
       <div id="simpleModal_header" class="modal">
         <div class="modal-window">
@@ -451,31 +476,6 @@ $("p:lang(de)")
         </div>
       </div>   
 
-      <li><a class="section-link" data-target="simpleModal_last" data-toggle="modal">:last</a></li>
-      <div id="simpleModal_last" class="modal">
-        <div class="modal-window">
-          <div class="modal-heading">
-            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/last-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
-            <h2>:last Selector</h2>
-          </div>
-          <p>Selects the last element. <strong>Note:</strong> This selector can only select one single element. Use the <strong>:last-child</strong> selector to select more than one element (one for each parent).</p>
-          <div class="Container">
-            <nav>
-            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
-            </nav>
-            <div class="Contents">
-              <div class="Content">
-                <pre><code> 
-<span class="code-example">Select the last &lt;p&gt; element:</span>
-
-$("p:last")
-</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-
       <li><a class="section-link" data-target="simpleModal_not" data-toggle="modal">:not()</a></li>
       <div id="simpleModal_not" class="modal">
         <div class="modal-window">
@@ -499,67 +499,244 @@ $("p:not(.intro)")
             </div>
           </div>
         </div>
-      </div>       
+      </div>   
+      
+      <li><a class="section-link" data-target="simpleModal_root" data-toggle="modal">:root</a></li>
+      <div id="simpleModal_root" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/root-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:root Selector</h2>
+          </div>
+          <p>Selects the document's root element. In HTML, the root element is always the &lt;html&gt; element.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Set the background color for the HTML document to blue:</span>
+
+$(":root").css("background-color", "blue");
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <li><a class="section-link" data-target="simpleModal_target" data-toggle="modal">:target</a></li>
+      <div id="simpleModal_target" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/target-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:target Selector</h2>
+          </div>
+          <p>Selects the target element indicated by the fragment identifier of the document's URI. This kind of URI ends with a "number sign" (#) followed by an anchor identifier (called the fragment identifier).</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select this URL's URI https://example.com/#foo</span>
+
+$(":target")
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
 
   </ul>
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
     <a class="section-link">
-      <small> Options </small>
-      Data
+      <small> Selectors </small>
+      Content Filters
     </a>
 
     <ul class="menu-sub">
 
-      <li>
-        <a class="section-link" href="#data"> data </a>
-      </li>
-      <li>
-        <a class="section-link" href="#props"> props </a>
-      </li>
-      <li>
-        <a class="section-link" href="#propsData">
-          propsData
-        </a>
-      </li>
-      <li>
-        <a class="section-link" href="#computed">
-          computed
-        </a>
-      </li>
-      <li>
-        <a class="section-link" href="#methods"> methods </a>
-      </li>
-      <li>
-        <a class="section-link" href="#watch"> watch </a>
-      </li>
+      <li><a class="section-link" data-target="simpleModal_contains" data-toggle="modal">:contains()</a></li>
+      <div id="simpleModal_contains" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/contains-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:contains() Selector</h2>
+          </div>
+          <p>Selects elements containing the specified string. The string can be contained directly in the element as text, or in a child element. This is mostly used together with another selector to select the elements containing the text in a group (like in the example below).</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all &lt;button&gt; elements containing "share":</span>
+
+$("button:contains(share)")
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <li><a class="section-link" data-target="simpleModal_empty" data-toggle="modal">:empty</a></li>
+      <div id="simpleModal_empty" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/empty-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:empty Selector</h2>
+          </div>
+          <p>Selects empty elements. An empty element is an element without child elements or text.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all empty elements:</span>
+
+$(":empty")
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <li><a class="section-link" data-target="simpleModal_has" data-toggle="modal">:has()</a></li>
+      <div id="simpleModal_has" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/has-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:has() Selector</h2>
+          </div>
+          <p>Selects all elements that have one or more elements inside of them, that matches the specified selector.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all &lt;p&gt; elements that have a &lt;span&gt; element inside of them:</span>
+
+$("p:has(span)")
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <li><a class="section-link" data-target="simpleModal_parent" data-toggle="modal">:parent</a></li>
+      <div id="simpleModal_parent" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/parent-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:parent Selector</h2>
+          </div>
+          <p>Selects all elements that are the parent of another element, including text nodes.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all &lt;td&gt; elements with children, including text:</span>
+
+$("td:parent")
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+
+
     </ul>
+    </li>
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
     <a class="section-link" href="#Options-DOM">
-      <small> Options </small>
-      DOM
+      <small> Selectors </small>
+      Visibility
     </a>
 
     <ul class="menu-sub">
 
-      <li>
-        <a class="section-link" href="#el"> el </a>
-      </li>
-      <li>
-        <a class="section-link" href="#template">
-          template
-        </a>
-      </li>
-      <li>
-        <a class="section-link" href="#render"> render </a>
-      </li>
-      <li>
-        <a class="section-link" href="#renderError">
-          renderError
-          <var> 2.2 </var>
-        </a>
-      </li>
+      <li><a class="section-link" data-target="simpleModal_hidden" data-toggle="modal">:hidden</a></li>
+      <div id="simpleModal_hidden" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/hidden-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:hidden Selector</h2>
+          </div>
+          <p>Selects hidden elements. Hidden elements are elements that are:
+            <ul class=selector-list-description>
+              <li>Set to display:none</li>
+              <li>Form elements with type="hidden"</li>
+              <li>Width and height set to 0</li>
+              <li>A hidden parent element (this also hides child elements)</li>
+            </ul></p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Show hidden &lt;p&gt; elements:</span>
+
+$("p:hidden").show();
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <li><a class="section-link" data-target="simpleModal_visible" data-toggle="modal">:visible</a></li>
+      <div id="simpleModal_visible" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/visible-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>:visible Selector</h2>
+          </div>
+          <p>selects every element that is currently visible. Visible elements are elements that are not:
+            <ul class=selector-list-description>
+              <li>Set to display:none</li>
+              <li>Form elements with type="hidden"</li>
+              <li>Width and height set to 0</li>
+              <li>A hidden parent element (this also hides child elements)</li>
+            </ul></p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all visible &lt;p&gt; elements:</span>
+
+$("p:visible")
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
     </ul>
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
