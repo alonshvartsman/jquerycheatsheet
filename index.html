@@ -23,8 +23,8 @@
   </header>
   <ul class="menu-root">
 
-    <li class="color-light-purple" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
 
+    <li class="databox" id="white" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
       <a class="section-link active" data-scroll="">
         <small>Selectors</small>
         Basics
@@ -132,14 +132,14 @@ $("#card")
           </div>
         </div>   
 
-        <li><a class="section-link" data-target="simpleModal_eq" data-toggle="modal">:eq()</a></li>
-        <div id="simpleModal_eq" class="modal">
+        <li><a class="section-link" data-target="simpleModal_selectorN" data-toggle="modal">selector1, selector2, selectorN</a></li>
+        <div id="simpleModal_selectorN" class="modal">
           <div class="modal-window">
             <div class="modal-heading">
-              <a class="api-button" href="https://api.jquery.com/eq-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
-              <h2>:eq() Selector</h2>
+              <a class="api-button" href="https://api.jquery.com/multiple-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+              <h2>Multiple Selector (“selector1, selector2, selectorN”)</h2>
             </div>
-            <p>The :eq() selector selects an element with a specific index number. The index numbers start at 0, so the first element will have the index number 0 (not 1).</p>
+            <p>The element selector can also be used to select multiple elements.<br><strong>Note:</strong> Seperate each element with a comma.</p>
             <div class="Container">
               <nav>
               <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
@@ -147,202 +147,53 @@ $("#card")
               <div class="Contents">
                 <div class="Content">
                   <pre><code> 
-<span class="code-example">Select the second < p > element:</span>
+<span class="code-example">Select all < h2 >, < div > and < span > elements:</span>
 
-$("p:eq(1)")
-              </code></pre>
+$("h2, div, span")
+</code></pre>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <li>
-        <li>
-          <a class="section-link" data-target="simpleModal_first" data-toggle="modal">
-            :first
-          </a>
-        </li>
-        <div id="simpleModal_first" class="modal">
-          <div class="modal-window">
-            <h2>:first Selector</h2>
-            <p>
-              The :first selector selects the first element.
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Select the first < p > element:
-
-wmJquery("p:first")
-                  </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <li>
-        <li>
-          <a class="section-link" data-target="simpleModal_last" data-toggle="modal">
-            :last
-          </a>
-        </li>
-        <div id="simpleModal_last" class="modal">
-          <div class="modal-window">
-            <h2>:last Selector</h2>
-            <p>
-              The :last selector selects the last element.
-            </p>
-            <div class="Container">
-              <nav>
-                <div class="current"></div>
-                <a href="#one">jQuery</a>
-              </nav>
-              <div class="Contents">
-                <div class="Content" id="one">
-                  <pre><code> 
-Select the last < p > element:
-
-wmjQuery("p:last")
-                  </code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </li>
+        </div> 
   </ul>
-  </li>
-  <li class="color-light-purple" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
+
+  <li class="databox" id="white" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
     <a class="section-link" data-scroll="">
       <small>Selectors</small>
-      Content Filters
+      Hierarchy
     </a>
-
     <ul class="menu-sub">
 
       <li>
-      <li>
-        <a class="section-link" data-target="simpleModal_contains" data-toggle="modal">
-          :contains()
-        </a>
+        <a class="section-link" data-target="simpleModal_childselector" data-toggle="modal">parent > child<var> 2.2 </var></a>
       </li>
-      <div id="simpleModal_contains" class="modal">
+      <div id="simpleModal_childselector" class="modal">
         <div class="modal-window">
-          <h2>:contains() Selector</h2>
-          <p>
-            The :contains() selector selects elements containing the specified string.
-          </p>
+          <div class="modal-heading">
+            <a class="api-button" href="https://api.jquery.com/child-selector/" target="_blank"><img
+                src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>Child Selector (“parent > child”)</h2>
+          </div>
+          <p>Selects all elements that are a direct child of the specified element</p>
           <div class="Container">
             <nav>
-              <div class="current"></div>
-              <a href="#one">jQuery</a>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
             </nav>
             <div class="Contents">
               <div class="Content" id="one">
                 <pre><code> 
-Select all < h1 > elements containing "WalkMe":
+<span class="code-example">Select all &lt;span&gt; elements that are a direct child of a &lt;div&gt; element:</span>
 
-wmjQuery('h1:contains(WalkMe)')
-                  </code></pre>
+$("div > span")
+            </code></pre>
               </div>
             </div>
           </div>
         </div>
       </div>
-  </li>
-  <li>
-  <li>
-    <a class="section-link" data-target="simpleModal_empty" data-toggle="modal">
-      :empty
-    </a>
-  </li>
-  <div id="simpleModal_empty" class="modal">
-    <div class="modal-window">
-      <h2>:empty Selector</h2>
-      <p>
-        The :empty selector selects empty elements. An empty element is an element without child elements or text.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-wmjQuery(':empty')
-                  </code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </li>
-  <li>
-  <li>
-    <a class="section-link" data-target="simpleModal_has" data-toggle="modal">
-      :has()
-    </a>
-  </li>
-  <div id="simpleModal_has" class="modal">
-    <div class="modal-window">
-      <h2>:has() Selector</h2>
-      <p>
-        The :has() selector selects all elements that have one or more elements inside of them, that matches the
-        specified selector.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-wmjQuery("p:has(span)")
-                  </code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </li>
-  <li>
-  <li>
-    <a class="section-link" data-target="simpleModal_parent" data-toggle="modal">
-      :parent
-    </a>
-  </li>
-  <div id="simpleModal_parent" class="modal">
-    <div class="modal-window">
-      <h2>:parent Selector</h2>
-      <p>
-        The :parent selector selects all elements that are the parent of another element, including text nodes.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-Select all < td > elements with children, including text:
 
-wmjQuery("td:parent")
-                  </code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </li>
+
   </ul>
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
