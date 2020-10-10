@@ -713,7 +713,7 @@ $("p:hidden").show();
             <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/visible-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
             <h2>:visible Selector</h2>
           </div>
-          <p>selects every element that is currently visible. Visible elements are elements that are not:
+          <p>Selects every element that is currently visible. Visible elements are elements that are not:
             <ul class=selector-list-description>
               <li>Set to display:none</li>
               <li>Form elements with type="hidden"</li>
@@ -740,75 +740,65 @@ $("p:visible")
     </ul>
   </li>
   <li class="databox" id="lightblue" data-aos="fade-up" data-aos-once="true" data-aos-duration="600">
-    <a class="section-link" href="#Options-Assets">
-      <small>Attributes</small>
+    <a class="section-link">
+      <small>Selectors</small>
       Attributes
     </a>
 
     <ul class="menu-sub">
 
-      <li>
-      <li>
-        <a class="section-link" data-target="simpleModal_attribute1" data-toggle="modal">
-          [name|=”value”]
-        </a>
-      </li>
+      <li><a class="section-link" data-target="simpleModal_attribute1" data-toggle="modal">[name|=”value”]</a></li>
       <div id="simpleModal_attribute1" class="modal">
         <div class="modal-window">
-          <h2>Attribute Contains Prefix Selector [name|=”value”]</h2>
-          <p>
-            Selects elements that have the specified attribute with a value either equal to a given string or starting
-            with that string followed by a hyphen (-).
-          </p>
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/attribute-contains-prefix-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>Attribute Contains Prefix Selector [name|=”value”]</h2>
+          </div>
+          <p>Selects elements that have the specified attribute with a value either equal to a given string or starting
+            with that string followed by a hyphen (-).</p>
           <div class="Container">
             <nav>
-              <div class="current"></div>
-              <a href="#one">jQuery</a>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
             </nav>
             <div class="Contents">
-              <div class="Content" id="one">
+              <div class="Content">
                 <pre><code> 
-Select all < p > elements with a title attribute that 
-starts with the value "Tomorrow":
-
-wmjQuery("p[title|='Tomorrow']")
-                  </code></pre>
+<span class="code-example">Select all &lt;p&gt; elements with a title attribute that starts with the value "Today":</span>
+  
+$("p[title|='Today']")
+</code></pre>
               </div>
             </div>
           </div>
         </div>
-      </div>
-  </li>
-  <li>
-    <a class="section-link" data-target="simpleModal_attribute2" data-toggle="modal">
-      [name*=”value”]
-    </a>
-  </li>
-  <div id="simpleModal_attribute2" class="modal">
-    <div class="modal-window">
-      <h2>Attribute Contains Selector [name*=”value”]</h2>
-      <p>
-        Selects elements that have the specified attribute with a value containing a given substring.
-      </p>
-      <div class="Container">
-        <nav>
-          <div class="current"></div>
-          <a href="#one">jQuery</a>
-        </nav>
-        <div class="Contents">
-          <div class="Content" id="one">
-            <pre><code> 
-Select all < input > elements with a name attribute 
-that contains the word "nation":
+      </div>  
 
-wmjQuery("input[name*='nation']")
-            </code></pre>
+      <li><a class="section-link" data-target="simpleModal_attribute2" data-toggle="modal">[name*=”value”]</a></li>
+      <div id="simpleModal_attribute2" class="modal">
+        <div class="modal-window">
+          <div class="modal-heading">
+            <a class="api-button" rel="noopener noreferrer" href="https://api.jquery.com/attribute-contains-selector/" target="_blank"><img src="images/jquerybutton.svg" alt="jQuery API"></a>
+            <h2>Attribute Contains Selector [name*=”value”]</h2>
+          </div>
+          <p>Selects elements that have the specified attribute with a value containing a given substring.</p>
+          <div class="Container">
+            <nav>
+            <div class="current"><img src="images/example.svg" class="example-icon" alt="jQquery Example"></div>
+            </nav>
+            <div class="Contents">
+              <div class="Content">
+                <pre><code> 
+<span class="code-example">Select all &lt;input&gt; elements with a name attribute that contains the word "country":</span>
+
+$("input[name*='country']")
+</code></pre>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </li>
+      </div>  
+
+
   <li>
     <a class="section-link" data-target="simpleModal_attribute3" data-toggle="modal">
       [name~=”value”]
