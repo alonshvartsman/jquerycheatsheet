@@ -280,6 +280,11 @@ a {
   text-decoration: none;
 }
 
+pre {
+  white-space: break-spaces;
+  margin-top: 0;
+}
+
 .logo {
   margin: 0;
 }
@@ -401,11 +406,6 @@ a {
   font-size: 17px;
   line-height: 24px;
   padding: 32px 30px 25px 30px;
-}
-
-pre {
-  white-space: break-spaces;
-  margin-top: 0;
 }
 
 .code-example {
