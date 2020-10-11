@@ -406,6 +406,7 @@ a {
 
 pre {
   white-space: break-spaces;
+  margin-top: 0;
 }
 
 .code-example {
